@@ -11,6 +11,38 @@
   </head>
 
   <body>
+  
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><li><%= link_to "Lens", root_path %></li></h1>
+						<p><%= link_to "Acerca de la pagina", pages_musica_path %></p>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</header>
+
     <%= yield %>
+
+    		<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<%= javascript_include_tag "jquery.min" %>
+			<%= javascript_include_tag "browser.min" %>
+			<%= javascript_include_tag "breakpoints.min" %>
+			<%= javascript_include_tag "main" %>
+			<script src="https://kit.fontawesome.com/67b968a0f8.js" crossorigin="anonymous"></script>
   </body>
 </html>
